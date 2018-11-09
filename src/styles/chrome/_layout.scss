@@ -1,0 +1,56 @@
+//
+// Base Layout
+// -----------------------------------------------------
+
+
+html, body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: $body-bg;
+	@include clearfix();
+}
+
+div.page-container {
+	width: 100%;
+	min-width: $min-width;
+	overflow: hidden;
+	position: relative;
+}
+
+div.content-wrapper {
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	@media (max-width: $mobile-breakpoint-max) {
+		max-width: $mobile-container-max-width;
+	}
+	@media (min-width: $tablet-breakpoint-min) and (max-width: $tablet-breakpoint-max) {
+		width: $tablet-container-width;
+	}
+	@media (min-width: $desktop-breakpoint-min) {
+		width: $desktop-container-width;
+	}
+}
+
+header#header,
+footer#footer,
+section.content {
+	background: $white;
+	border: 1px solid $gray;
+	margin: 20px 0;
+	padding: 20px $mobile-gutter-half-width;
+	@include clearfix();
+	@media (min-width: $tablet-breakpoint-min) and (max-width: $tablet-breakpoint-max) {
+		padding: 20px $tablet-gutter-half-width;
+	}
+	@media (min-width: $desktop-breakpoint-min) {
+		padding: 20px $desktop-gutter-half-width;
+	}
+}
+div#main {
+	min-height: calc(100vh - 240px);
+}
+

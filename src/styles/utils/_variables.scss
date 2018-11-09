@@ -1,0 +1,45 @@
+//
+// Config Vars
+// -----------------------------------------------------
+
+
+// Colors
+$black: #000;
+$white: #fff;
+$gray: #666;
+$gray-med: #999;
+$gray-light: #ccc;
+$body-bg: #efefef;
+$text-color: #101010;
+$link-color: #81b949;
+$link-hover-color: #6fa43a;
+
+// Paths
+$image-path: "/assets/images";
+$fonts-path: "/assets/fonts";
+
+// Fonts
+$main-font: Arial, sans-serif;
+$alt-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Media Queries
+$mobile-breakpoint-min: 1px;
+$mobile-breakpoint-max: 767px;
+$tablet-breakpoint-min: 768px;
+$tablet-breakpoint-max: 1023px;
+$desktop-breakpoint-min: 1024px;
+$desktop-breakpoint-max: 10000px;
+
+// Container Widths
+$min-width: 360px;
+$mobile-container-max-width: 640px;
+$tablet-container-width: 720px;
+$desktop-container-width: 960px;
+
+// Grid System
+$mobile-gutter-width: 10px;
+$tablet-gutter-width: 20px;
+$desktop-gutter-width: 30px;
+$mobile-gutter-half-width: $mobile-gutter-width / 2;
+$tablet-gutter-half-width: $tablet-gutter-width / 2;
+$desktop-gutter-half-width: $desktop-gutter-width / 2;

@@ -1,0 +1,21 @@
+//
+// Application
+// -----------------------------------------------------
+
+// configuration
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/grid";
+
+// global styles
+@import "chrome/reset";
+@import "chrome/bp-indicator";
+@import "chrome/typography";
+@import "chrome/classes";
+@import "chrome/layout";
+
+// widgets & components
+// @import "widgets/super-widget";
+
+// specific views
+@import "views/home";

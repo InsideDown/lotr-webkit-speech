@@ -1,0 +1,93 @@
+//
+// Base Typography
+// -----------------------------------------------------
+
+
+body {
+	color: $text-color;
+	font-family: $main-font;
+	// uncomment appropriate line to set default type size
+	font-size: 100%; //16px
+	// font-size: 87.5%; //14px
+	// font-size: 75.0%; //12px
+	// font-size: 62.5%; //10px
+	line-height: 1.5; //24px
+
+	// Tablet / Desktop
+	@media (min-width: $tablet-breakpoint-min) {
+		font-size: 87.5%; //14px
+		line-height: 1.5; //21px
+	}
+
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	color: $link-hover-color;
+	outline: none;
+	text-decoration: underline;
+}
+
+p, ul, ol, dl, table, address {
+	margin-bottom: 1.5em;
+}
+	li {
+		margin-bottom: 0.2em;
+	}
+	dt {
+		font-weight: bold;
+		margin-bottom: 0.2em;
+	}
+	dd {
+		margin-bottom: 0.5em;
+	}
+	th {
+		font-weight: bold;
+		text-align: left;
+		vertical-align: bottom;
+	}
+	td {
+		vertical-align: top;
+	}
+
+h1 {
+	color: $gray;
+	font-family: $alt-font;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 44px;
+}
+h2, .h2 {
+	color: $gray;
+	font-family: $alt-font;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 32px;
+	margin-bottom: 8px;
+}
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 0.2em;
+}
+h3, .h3 {
+	font-size: 1.3em;
+}
+h4, .h4 {
+	font-size: 1.1em;
+}
+h5, .h5 {
+	font-size: 1.0em;
+}
+h6, .h6 {
+	font-size: 1.0em;
+	font-weight: normal;
+}
+
+hr {
+	border-top: 2px solid $gray;
+	margin: 1.5em 0;
+}
